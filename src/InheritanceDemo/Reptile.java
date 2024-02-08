@@ -2,18 +2,19 @@ package InheritanceDemo;
 
 public class Reptile extends Animal{
     private boolean hasScales;
-    private boolean hasNoLegs;
-    private boolean livesInWater;
+    private int pounds;
+    private boolean canSwim;
+    
 
     public Reptile(){
         super(true,0,"carnivore");
     }
 
-    public Reptile(boolean beingDangerous, int numberOfLegs, String diet, boolean hasScales, boolean hasNoLegs, boolean livesInWater) {
+    public Reptile(boolean beingDangerous, int numberOfLegs, String diet, boolean hasScales, int pounds, boolean canSwim) {
         super(true, 0, "carnivore");
         this.hasScales = hasScales;
-        this.hasNoLegs = hasNoLegs;
-        this.livesInWater = livesInWater;
+        this.pounds = pounds;
+        this.canSwim = canSwim;
     }
 
     @Override
